@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
 import Header from '../Header/Header'
+import HomePage from '../HomePage/HomePage'
+import {Route} from 'react-router-dom';
 import './App.css';
 
 class App extends Component {
@@ -21,6 +23,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header/>
+        <Route exact path='/' render={() => <HomePage/>}/>
       </div>
     )
   }
