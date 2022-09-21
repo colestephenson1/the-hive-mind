@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import './Header.css'
 
 
@@ -7,12 +8,11 @@ const Header = () => {
   return (
     <div className='header'>
       <div className='title-container'>
-        <p>Welcome to The Hive Mind. We're Glad to Know Us.</p>
+        <h1>Welcome to The Hive Mind. We're Glad to Know Us.</h1>
       </div>
       <div className='nav-bar'>
-        <button>Guides</button>
-        <p>Click One of the Archetypes Below to See a Decklist!</p>
-        <button>The Goods</button>
+        <Link to='/guides'><button className='nav-button'>Guides</button></Link>
+        <Link to='/cardrepo'><button className='nav-button'>The Goods</button></Link>
       </div>
     </div>
   )

@@ -1,0 +1,19 @@
+.nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+
+.nav-button {
+  height: 4vh;
+  width: 5vw;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.water-drop {
+  height:10vh;
+}
