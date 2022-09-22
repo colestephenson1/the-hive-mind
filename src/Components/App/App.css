@@ -7,7 +7,11 @@ body {
   height: 100%;
 }
 
+h2 {
+  color: white;
+}
+
 * {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Zen Tokyo Zoo', cursive;
   /* border: 1px solid red; */
 }
