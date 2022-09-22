@@ -1,0 +1,44 @@
+.large-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: space-between;
+}
+
+.delver {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 50vh;
+}
+
+.decklist {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  content:"/a";
+  white-space:pre;
+  margin-right: 100px;
+}
+
+.descrip, .decklist {
+  color: white;
+}
+
+.descrip-container {
+  text-align: center;
+}
+
+.decklist-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px
+}
+
+.youtube {
+  margin-right: 275px;
+}
+
+.home-button {
+  width: 5vw;
+}
