@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
   align-items: space-between;
 }
 
@@ -21,9 +24,8 @@
 
 .descrip-container {
   margin-top: 10px;
-  width: 75vw;
+  width: 90vw;
   text-align: center;
-  border: 1px solid black;
   background-color: beige;
   border: 1px solid black;
   border-radius: 5px;
