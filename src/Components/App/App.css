@@ -30,3 +30,9 @@ a:-webkit-any-link:hover {
     opacity: .75;
     transition: all 300ms ease-in-out;
 }
+
+button {
+  background-color: #008AD8;
+  color: white;
+  border-radius: 3px;
+}
