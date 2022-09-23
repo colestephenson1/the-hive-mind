@@ -21,7 +21,11 @@ class App extends Component {
   componentDidMount = () => {
     fetch('https://api.scryfall.com/cards/search?q=c%3Ablue')
     .then(response => response.json())
-    .then(data => this.setState({cards: data.data}))
+    .then(data => {
+      const definedCards = data.data.filter(card => card.image_uris)
+      this.setState({cards: definedCards})
+
+    })
     .catch(error => console.log(error))
   }
 
