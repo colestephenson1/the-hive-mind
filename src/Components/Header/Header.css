@@ -7,7 +7,6 @@ h1 {
   background-color: black;
   height: 12vh;
   width: 100vw;
-  /* position: sticky; top: 0; */
 }
 
 .nav-bar {
@@ -19,7 +18,8 @@ h1 {
 
 .nav-button {
   height: 4vh;
-  width: 5vw;
+  width: 7vw;
+  font-size: 18px;
 }
 
 .water-drop {
