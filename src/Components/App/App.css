@@ -1,19 +1,19 @@
 body {
   display: flex;
   justify-content: center;
-  background-image: url('https://images.saymedia-content.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_1200/MTc5MjE4MTk2NTc0MzgxNTU2/blue-artwork-mtg.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.saymedia-content.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:eco%2Cw_1200/MTc5MjE4MTk2NTc0MzgxNTU2/blue-artwork-mtg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
+  font-family: 'Zen Tokyo Zoo';
 }
 
 h2 {
   color: white;
 }
 
-* {
+h1 {
   font-family: 'Zen Tokyo Zoo', cursive;
-  /* border: 1px solid red; */
 }
 
 Link {

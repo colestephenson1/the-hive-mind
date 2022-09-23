@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <div className='header'>
       <div className='title-container'>
-        <h1>Welcome to The Hive Mind. We're Glad to Know Us.</h1>
+        <h1>Welcome to The Hive Mind. Come Learn All There is to Know About Blue.</h1>
       </div>
       <div className='nav-bar'>
         <Link to='/guides'><button className='nav-button'>Guides</button></Link>

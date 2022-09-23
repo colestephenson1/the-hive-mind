@@ -5,7 +5,7 @@ import './HomePage.css'
 const HomePage = () => {
   return (
     <div className='home-page-container'>
-      <h2>Click One of the Cards Below to See a Decklist! Left is Tempo, Center is Control, Right is Combo.</h2>
+      <h2>Click One of the Cards Below to See a Decklist. Your Choices are Tempo, Control, and Combo.</h2>
       <div className='image-container'>
         <Link to='/tempo'><img className='decklist-path-image' src='https://c1.scryfall.com/file/scryfall-cards/art_crop/front/1/1/11bf83bb-c95b-4b4f-9a56-ce7a1816307a.jpg?1562826346' alt='delver-of-secrets'/></Link>
         <Link to='/control'><img className='decklist-path-image' src='https://c1.scryfall.com/file/scryfall-cards/art_crop/front/3/0/30f6fca9-003b-4f6b-9d6e-1e88adda4155.jpg?1562847413' alt='cryptic-command'/></Link>
