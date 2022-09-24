@@ -23,13 +23,22 @@ class App extends Component {
 
   componentDidMount = () => {
     fetch('https://api.scryfall.com/cards/search?q=c%3Ablue')
-    .then(response => response.json())
+    .then(response => {
+      if(!response.ok) {
+        throw new Error()
+      } else {
+        this.setState({error: false})
+        return response.json()
+      }
+    })
     .then(data => {
       const definedCards = data.data.filter(card => card.image_uris)
       this.setState({cards: definedCards})
 
     })
-    .catch(error => console.log(error))
+    .catch(error => {
+      this.setState({error: true, errorMessage: 'Error 404. The data could not be fetched. Please reload and try again'})
+    })
   }
 
 
@@ -47,6 +56,7 @@ class App extends Component {
       <div className="App">
         <Header clearState={this.clearState}/>
         <Switch>
+          {(this.state.error && <h4 className="error">{this.state.errorMessage}</h4>)}
           <Route exact path='/' render={() => <HomePage/>}/>
           <Route exact path='/tempo' render={() => <Tempo/>}/>
           <Route exact path='/control' render={() => <Control/>}/>
