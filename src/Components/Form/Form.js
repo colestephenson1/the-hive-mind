@@ -20,7 +20,7 @@ class Form extends Component {
   render() {
     return (
       <div className='form'>
-        <select id='cardType' name='cardType' value={this.state.cardType} onChange={event => this.handleChange(event)}>
+        <select className='card-type' name='cardType' value={this.state.cardType} onChange={event => this.handleChange(event)}>
           <option value='choose-type' selected>SEARCH BY CARD TYPE</option>
           <option value='Creature'>CREATURE</option>
           <option value='Sorcery'>SORCERY</option>

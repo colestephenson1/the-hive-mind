@@ -1,5 +1,103 @@
-describe('empty spec', () => {
-  it('passes', () => {
-    cy.visit('https://example.cypress.io')
+describe('App', () => {
+  beforeEach(() => {
+    cy.intercept('GET', 'https://api.scryfall.com/cards/search?q=c%3Ablue', { fixture: 'cards' } )
+    cy.intercept('GET', 'https://api.scryfall.com/cards/search?foo', { fixture: 'error' })
+    cy.visit('http://localhost:3000/')
   })
+
+  it('should show the title greeting', () => {
+    cy.get('.greeting')
+    .contains('Welcome to The Hive Mind. Come Learn All There is to Know About Blue.')
+    .should('be.visible')
+  })
+
+  it('should show nav-buttons and three clickable images', () => {
+    cy.get('.nav-button')
+    .first()
+    .contains('Guides')
+    .should('be.visible')
+
+    cy.get('.nav-button')
+    .last()
+    .contains('The Goods')
+    .should('be.visible')
+
+    cy.get('.decklist-path-image')
+    .should('have.length', 3)
+    .should('be.visible')
+
+  })
+
+  it('should be able to click Guides button and see a list of guides, then click the title to go home', () => {
+    cy.get('.nav-button')
+    .first()
+    .click()
+    .url().should('eq', 'http://localhost:3000/guides')
+    .get('.external-link')
+    .should('have.length', 5)
+    .first().contains('True Blue Visited by Mark Rosewater (lead MTG designer)')
+    .get('.greeting').click()
+    .get('.decklist-path-image')
+    .should('have.length', 3)
+    .should('be.visible')
+  })
+
+  it('should be able to click an image in the homescreen to see a decklist, description, and embedded video. Can also click title link to go home', () => {
+    cy.get('.decklist-path-image')
+    .should('have.length', 3)
+    .first().click()
+    .url().should('eq', 'http://localhost:3000/tempo')
+    .get('.decklist')
+    .should('be.visible')
+    .get('.youtube')
+    .should('be.visible')
+    .get('.descrip')
+    .should('be.visible')
+    .get('.greeting').click()
+    .get('.decklist-path-image')
+    .should('have.length', 3)
+    .should('be.visible')
+
+    cy.get('.decklist-path-image')
+    .should('have.length', 3)
+    .last().click()
+    .url().should('eq', 'http://localhost:3000/combo')
+    .get('.decklist')
+    .should('be.visible')
+    .get('.youtube')
+    .should('be.visible')
+    .get('.descrip')
+    .should('be.visible')
+    .get('.greeting').click()
+    .get('.decklist-path-image')
+    .should('have.length', 3)
+    .should('be.visible')
+
+  })
+
+  it('should be able to see a repo of cards, and filter them by card type, then return home', () => {
+    cy.get('.nav-button')
+    .last()
+    .contains('The Goods')
+    .click()
+    .url().should('eq', 'http://localhost:3000/cardrepo')
+    .get('.card')
+    .should('have.length', 172)
+    .get('select[name="cardType"]')
+    .select('ARTIFACT')
+    .should('have.value', 'Artifact')
+    .get('.search-button')
+    .click()
+    .get('.card')
+    .should('have.length', 4)
+    .first()
+    .should('have.attr', 'alt')
+    .should('include', 'Acquisition Octopus')
+    .get('.greeting')
+    .click()
+    .get('.decklist-path-image')
+    .should('have.length', 3)
+    .should('be.visible')
+  })
+
 })

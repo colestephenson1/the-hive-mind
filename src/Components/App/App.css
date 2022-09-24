@@ -36,3 +36,92 @@ button {
   color: white;
   border-radius: 3px;
 }
+
+@media (max-height: 768px) {
+  .nav-button {
+    height: 3vh;
+    width: 15vw;
+  }
+
+  .decklist-container, .descrip-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+
+  .decklist-container {
+    margin-right: -250px;
+    font-size: 16px;
+  }
+
+  .descrip-container {
+    font-size: 15px;
+  }
+
+  .home-button {
+    display: none;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+  }
+  
+  .card {
+    height: 45vh;
+    width: 30vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .youtube {
+    height: 25vh;
+    width: 50vw;
+  }
+
+  .decklist-container, .descrip-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+  }
+
+  .decklist-container {
+    margin-right: -250px;
+  }
+
+  .home-button {
+    display: none;
+  }
+
+  .header {
+    margin-left: 10px;
+  }
+
+  .title-container {
+    font-size: 10px;
+  }
+
+  .nav-button {
+    height: 3vh;
+    width: 15vw;
+  }
+
+  .decklist-path-image {
+    height: 70vh;
+  }
+
+  .content-container {
+    width: 60vw;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+}
