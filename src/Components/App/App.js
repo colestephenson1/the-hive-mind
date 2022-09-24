@@ -15,7 +15,9 @@ class App extends Component {
     super();
     this.state = {
       cards: [],
-      filtered: []
+      filtered: [],
+      error: false,
+      errorMessage: ''
     }
   }
 

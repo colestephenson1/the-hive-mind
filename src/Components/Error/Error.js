@@ -4,7 +4,7 @@ import './Error.css'
 
 const Error = () => {
   return (
-    <Link to='/'><h2>Error. Path not valid. Please Click this to Return Home.</h2></Link>
+    <Link to='/'><h2 className='error'>Error. Path not valid. Please Click this to Return Home.</h2></Link>
   )
 }
 
