@@ -11,7 +11,7 @@ const Tempo = () => {
     <div className='large-container'>
       <div className='decklist-container'>
         <p className='decklist'>{decklist}</p>
-        <iframe title='tempo-video'className='youtube' width="900" height="500" src='https://www.youtube.com/embed/AagHruSU8U8'></iframe>
+        <iframe title='tempo-video' className='youtube' src='https://www.youtube.com/embed/AagHruSU8U8'></iframe>
       </div>
       <div className='descrip-container'>
         <p className='descrip'>{description}</p>

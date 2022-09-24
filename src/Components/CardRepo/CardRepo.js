@@ -8,13 +8,13 @@ const CardRepo = ({cards, filteredCards, filterByType}) => {
 
   const blueCards = cards.map(card => {
     return (
-      <BlueCard images={card.image_uris}/>
+      <BlueCard key={card.name} images={card.image_uris} name={card.name}/>
     )
   })
 
   const filteredBlueCards = filteredCards.map(card => {
     return (
-      <BlueCard images={card.image_uris}/>
+      <BlueCard key={card.name} images={card.image_uris} name={card.name}/>
     )
   })
 
