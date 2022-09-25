@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# The Hive Mind
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Screen Shot 2022-09-24 at 8 20 58 AM](https://user-images.githubusercontent.com/102827145/192160590-376e456f-f211-422a-b172-7c525fdd1a81.png)
 
-## Available Scripts
+## Table of Contents
+  - [Introduction](#introduction)
+  - [Technologies](#technologies)
+  - [Features](#features)
+  - [Possible Future Extensions](#possible-future-extensions)
+  - [Set Up](#set-up)
+  - [Organizational Resources](#organizational-resources)
+  - [Sources](#sources)
+  - [Contributors](#contributors)
+  - [Project Specs](#project-specs)
 
-In the project directory, you can run:
+## Introduction
+  - The goal of this project was to create a React application that showcases my personal passiona while demonstrating a concrete grasp of foundational React/Cypress skills. 
+  - Visit The Hive Mind and you will see three cards displayed, each one representing a different archetype of blue decks you can play. Check out all three to expand your blue knowledge and prowess to new levels. The Hive Mind is glad to know us.
+## Technologies
+  - React
+  - JavaScript
+  - Cypress
+  - Router
+  - HTML
+  - CSS
 
-### `npm start`
+## Features
+- When clicked, each one populates a decklist, embedded video of a pro playing the decklist, and a shoprt description about the archetype and what makes it strong.
+-  There are also two nav bar buttons, labeled 'Guides' and 'The Goods'. Guides takes you to a repository of links that populate a new tab. The links are articles/resources if you would like extra external information about MTG blue. 
+- The Goods brings up a repository of blue cards that can be filtered by card type.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Possible Future Extensions
+- A way to make custom decklists through a favoriting function.
+- A way to keep track of competitive blue decks that place in the top eight of high-ranking events.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Set Up
+- Deployed application: https://the-hive-mind-cds.herokuapp.com/z
 
-### `npm test`
+## Organizational Resources
+- [github project board](https://github.com/users/colestephenson1/projects/2)
+- [figma board](https://www.figma.com/file/YmWIHjnXrRUYxnxjHq9hal/Untitled?node-id=0%3A1)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Sources
+  - [MDN](http://developer.mozilla.org/en-US/)
+  - [W3Schools](https://www.w3schools.com/)
+  - [CSS-TRICKS](https://css-tricks.com/)
+  - [Scryfall API(https://scryfall.com/docs/api)
 
-### `npm run build`
+## Contributors
+  - [Cole Stephenson](https://github.com/colestephenson1)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Project Specs
+  - The project spec & rubric can be found [here](https://frontend.turing.edu/projects/module-3/showcase.html)
