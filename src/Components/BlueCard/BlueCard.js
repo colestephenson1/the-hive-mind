@@ -1,5 +1,6 @@
 import React from 'react'
 import './BlueCard.css'
+import PropTypes from 'prop-types'
 
 
 const BlueCard = ({images, name}) => {
@@ -10,5 +11,10 @@ const BlueCard = ({images, name}) => {
 
 }
 
+
+BlueCard.propTypes = {
+  images: PropTypes.object,
+  name: PropTypes.string,
+}
 
 export default BlueCard

@@ -11,7 +11,7 @@ class Form extends Component {
     }
   }
 
-  handleChange = event => {
+  handleChange = (event) => {
        this.setState({
            [event.target.name]: event.target.value
        })
@@ -21,7 +21,7 @@ class Form extends Component {
     return (
       <div className='form'>
         <select className='card-type' name='cardType' value={this.state.cardType} onChange={event => this.handleChange(event)}>
-          <option value='choose-type' selected>SEARCH BY CARD TYPE</option>
+          <option value='choose-type' defaultValue>SEARCH BY CARD TYPE</option>
           <option value='Creature'>CREATURE</option>
           <option value='Sorcery'>SORCERY</option>
           <option value='Instant'>INSTANT</option>

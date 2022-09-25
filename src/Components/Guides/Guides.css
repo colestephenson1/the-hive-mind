@@ -9,7 +9,7 @@
     url('https://www.hipstersofthecoast.com/wp-content/uploads/2016/08/frantic-search-e1471829511217.jpg');
   background-repeat: no-repeat, no-repeat;
   background-position: center left, center right;
-  background-size: 50% 100%
+  background-size: 50% 100%;
 }
 
 .content-container {
@@ -22,6 +22,7 @@
   align-items: center;
   border: 1px solid black;
   text-align: center;
+  margin-top: 20px;
 
 }
 

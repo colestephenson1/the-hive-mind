@@ -34,7 +34,6 @@ class App extends Component {
     .then(data => {
       const definedCards = data.data.filter(card => card.image_uris)
       this.setState({cards: definedCards})
-
     })
     .catch(error => {
       this.setState({error: true, errorMessage: 'Error 404. The data could not be fetched. Please reload and try again'})

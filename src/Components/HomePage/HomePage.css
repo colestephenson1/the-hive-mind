@@ -5,6 +5,13 @@
   height: 85vh;
 }
 
+
+.greeting {
+  text-align: center;
+  content:"/a";
+  white-space:pre;
+}
+
 .image-container {
   display: flex;
   height: 100%;

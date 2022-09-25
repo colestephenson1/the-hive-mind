@@ -71,7 +71,7 @@ button {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 15px;
   }
-  
+
   .card {
     height: 45vh;
     width: 30vw;
@@ -108,7 +108,7 @@ button {
   }
 
   .nav-button {
-    height: 3vh;
+    height:4vh;
     width: 15vw;
   }
 
@@ -118,6 +118,11 @@ button {
 
   .content-container {
     width: 60vw;
+  }
+
+  .nav-bar {
+    display: flex;
+    align-items: center;
   }
 
   h2 {

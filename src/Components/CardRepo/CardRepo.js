@@ -2,6 +2,7 @@ import React from 'react';
 import BlueCard from '../BlueCard/BlueCard'
 import Form from '../Form/Form'
 import './CardRepo.css'
+import PropTypes from 'prop-types'
 
 const CardRepo = ({cards, filteredCards, filterByType}) => {
 
@@ -31,5 +32,11 @@ const CardRepo = ({cards, filteredCards, filterByType}) => {
   )
 }
 
+
+CardRepo.propTypes = {
+  cards: PropTypes.array,
+  filteredCards: PropTypes.array,
+  filterByType: PropTypes.func,
+}
 
 export default CardRepo;
