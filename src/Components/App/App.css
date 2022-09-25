@@ -37,6 +37,7 @@ button {
   border-radius: 3px;
 }
 
+
 @media (max-height: 768px) {
   .nav-button {
     height: 3vh;
@@ -129,4 +130,45 @@ button {
     font-size: 18px;
   }
 
+}
+
+
+@media (max-width: 360px) {
+  .decklist-path-image {
+    height: 30vh;
+    width: 30vw;
+  }
+
+  .decklist {
+    display: none;
+  }
+
+  .descrip-container {
+    font-size: 14px;
+  }
+
+  .nav-button {
+    height: 5vh;
+    width: 18vw;
+    font-size: 12px;
+  }
+
+  .title-container {
+    font-size: 8px;
+  }
+
+  h2 {
+    font-size: 10px;
+  }
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+  }
+
+  .card {
+    height: 45vh;
+    width: 45vw;
+  }
 }
