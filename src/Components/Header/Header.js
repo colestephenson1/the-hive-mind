@@ -1,6 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 import './Header.css'
+import PropTypes from 'prop-types'
 
 
 
@@ -16,6 +17,10 @@ const Header = ({clearState}) => {
       </div>
     </div>
   )
+}
+
+Header.propTypes = {
+  clearState: PropTypes.func
 }
 
 export default Header;
