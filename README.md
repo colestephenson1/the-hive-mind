@@ -34,7 +34,7 @@
 - A way to keep track of competitive blue decks that place in the top eight of high-ranking events.
 
 ## Set Up
-- Deployed application: https://the-hive-mind-cds.herokuapp.com/z
+- Deployed application: https://the-hive-mind-cds.herokuapp.com/
 
 ## Organizational Resources
 - [github project board](https://github.com/users/colestephenson1/projects/2)
