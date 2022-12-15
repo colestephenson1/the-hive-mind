@@ -44,7 +44,7 @@
   - [MDN](http://developer.mozilla.org/en-US/)
   - [W3Schools](https://www.w3schools.com/)
   - [CSS-TRICKS](https://css-tricks.com/)
-  - [Scryfall API(https://scryfall.com/docs/api)
+  - [Scryfall API](https://scryfall.com/docs/api)
 
 ## Contributors
   - [Cole Stephenson](https://github.com/colestephenson1)
